@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono',sans-serif;
+    color: hsl(183, 100%, 15%);
+}
+.logo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.input-group{
+    width: 100%;
+}
+
+.inputBox{
+    display: flex;
+    background-color: hsl(189, 41%, 97%);
+    padding: 10px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3px;
+    gap: 10px;
+    border: 2px solid transparent;
+}
+.inputBox img{
+    width: 13px;
+    height: 20px;
+}
+
+input[type="number"]{
+    margin-top: 2px;
+    flex:1;
+    outline:none;
+    border:none;
+    text-align: right;
+    width:50;
+    height: 25px;
+    background-color: hsl(189, 41%, 97%);
+    font-size: 1.5rem;
+
+}
+label{
+    letter-spacing: 2px;
+    font-family: 'Space Mono', sans-serif;
+    color:hsl(183, 100%, 15%)
+}
+.inputBox:hover{
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+.percentages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.percentages button{
+    padding: 15px 5px;
+    background-color:  hsl(183, 100%, 15%);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+.percentages div{
+    padding: 15px 5px;
+    background-color:  hsl(183, 100%, 15%);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right{
+    margin-top: 20px;
+    background-color: hsl(183, 100%, 15%);
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.calculated{
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculated div h4{
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.calculated div span{
+    color:hsl(185, 41%, 84%);
+}
+.calculated h2{
+    font-size: 2rem;
+    color:hsl(172, 67%, 45%);
+}
+
+.right button{
+    background-color: hsl(172, 67%, 45%);
+    padding: 15px;
+    border:none;
+    border-radius: 10px;
+}
+.right .upper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media  screen and (min-width: 500px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 800px;
+        gap: 20px;
+    }
+    .left{
+        width: 50%;
+    }
+    .right{
+        width: 50%;
+        padding: 30px;
+        justify-content: space-between;
+    }
+}

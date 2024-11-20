@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <script defer src="script.js"></script>
+  <img class="logo" src="images/logo.svg">
+  <div class="container">
+    <div class="left">
+      <div class="input-group">
+        <label for="bill">Bill</label>
+        <div class="inputBox">
+          <img src="images/icon-dollar.svg">
+          <input type="number" name="bill" id="bill" placeholder="0">
+        </div>
+      </div>
+      <div class="percentage-group">
+        <h3 class="selection">Select Tip %</h3>
+        <div class="percentages" id="percentages">
+          <button id="per-5">5%</button>
+          <button id="per-10">10%</button>
+          <button id="per-15">15%</button>
+          <button id="per-25">25%</button>
+          <button id="per-50"> 50%</button>
+          <button id="per-custom">Custom</button>
+        </div>
+      </div>
+      <div class="people-amount" id="people-amount">
+        <h3>Number of People</h3>
+        <div class="inputBox">
+          <img src="images/icon-person.svg">
+          <input type="number" name="bill" id="people" placeholder="0">
+        </div>
+      </div>
+      
+    </div>
+    <div class="right">
+      <div class="upper">
+      <div class="calculated">
+        <div id="tipAmount">
+          <h4>Tip amount</h4>
+          <span>/ person</span>
+        </div>
+        <h2 id="per-person">$4.27</h2>
+      </div>
+      <div class="calculated">
+        <div id="totalAmount">
+          <h4>Total</h4>
+          <span>/ person</span>
+        </div>
+        <h2 id="per-all">$32.79</h2>
+      </div>
+    </div>
+      <button id="reset">RESET</button>
+    </div>
+  </div>
+<!--   
+  
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset
+   -->
+  
+</body>
+</html>
